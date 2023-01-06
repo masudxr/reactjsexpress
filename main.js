@@ -1,5 +1,6 @@
 import express from 'express'
-const cors = require ("cors");
+import cors from 'cors';
+
 const app = express()
 
 app.use(cors({
@@ -22,7 +23,7 @@ app.get('/api',(req, res) => {
 });
 
 app.get('/api/courses',(req, res) => {
-    res.json(courses)
+    res.send(courses)
 });
 
 app.get('/api/courses/:id',(req, res) => {

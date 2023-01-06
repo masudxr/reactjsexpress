@@ -1,4 +1,4 @@
-import FetchData from './Components/GetData.js';
+import FetchData from './components/GetData.js';
 
 function App(){
     return(
