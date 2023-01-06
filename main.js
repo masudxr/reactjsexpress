@@ -1,5 +1,10 @@
 import express from 'express'
+const cors = require ("cors");
 const app = express()
+
+app.use(cors({
+    origin: "http://localhost:3010",
+}));
 
 app.use(express.json());
 
@@ -12,12 +17,12 @@ const courses = [
     {id: 6, name: 'Zilani'},
 ]
 
-app.get('/',(req, res) => {
+app.get('/api',(req, res) => {
   res.send('SetUp React JS and Express JS')
 });
 
 app.get('/api/courses',(req, res) => {
-    res.send(courses)
+    res.json(courses)
 });
 
 app.get('/api/courses/:id',(req, res) => {
@@ -40,5 +45,5 @@ app.get('/api/posts/:year/:month',(req, res) => {
 
 
 // listen Port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3010;
 app.listen(port, () => console.log(`Listening the Port ${port}.. Have a Good Journey`))

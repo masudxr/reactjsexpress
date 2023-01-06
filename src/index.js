@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.js';
+import reportWebVitals from './reportWebVitals.js';
+import ApiData from './Components/fetchData.js';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const rootElement = document.getElementById('root');
+const appRoot = ReactDOM.createRoot(rootElement);
+appRoot.render(
   <React.StrictMode>
-    <App />
+    <div>
+    <App /><ApiData />
+    </div>
   </React.StrictMode>
 );
 

@@ -4,7 +4,9 @@ import axios from 'axios';
 function FetchData() {
     const [data, setData] = useState("");
     const GetData = () =>{
+      // axios.get("http://api.quotable.io/random")
       axios.get("http://api.quotable.io/random")
+      // axios.get("http://localhost:3010/api/courses")
       .then(res => {
         console.log(res.data.content);
       setData(res.data.content);
