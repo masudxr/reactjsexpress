@@ -1,21 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.js';
+// import App from './App.js';
 import reportWebVitals from './reportWebVitals.js';
 // import ApiData from './components/ApiData.js';
 // import DataFetching from './components/useEffect.js';
-import FetchingSingle from './components/EffectGetSingle.js';
+// import FetchingSingle from './components/EffectGetSingle.js';
+import ObjectApiData from './components/ObjectDataApi.js';
 
 const rootElement = document.getElementById('root');
 const appRoot = ReactDOM.createRoot(rootElement);
 appRoot.render(
   <React.StrictMode>
     <div>
-    {/* <App />
-    <ApiData /> */}
+    {/* <App /> */}
+    <br/>
+    <ObjectApiData /> <br/>
+     {/* <ApiData />    <br/> */}
+    {/* <FetchingSingle />    <br/> */}
     {/* <DataFetching /> */}
-    <FetchingSingle />
     </div>
   </React.StrictMode>
 );

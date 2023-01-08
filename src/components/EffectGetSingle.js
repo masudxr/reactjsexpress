@@ -20,9 +20,6 @@ function FetchingSingle() {
         <div>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
             <div>{post.title}</div>
-            {/* <ul>
-                {posts.map(post =>(<li key={post.id}>{post.title}</li>))}
-            </ul> */}
         </div>
     )
 }
