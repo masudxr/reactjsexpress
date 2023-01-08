@@ -15,7 +15,6 @@ function ObjectApiData() {
             <ul>
                 {datas.map(data =>(<li key={data.id}>{data.name}</li>))}
             </ul>
-        {/* { <p>{datas}</p> } */}
         </div>
      );
 }

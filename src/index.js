@@ -6,16 +6,21 @@ import reportWebVitals from './reportWebVitals.js';
 // import ApiData from './components/ApiData.js';
 // import DataFetching from './components/useEffect.js';
 // import FetchingSingle from './components/EffectGetSingle.js';
-import ObjectApiData from './components/ObjectDataApi.js';
+// import ObjectApiData from './components/ObjectDataApi.js';
+// import MenuBar from './components/MenuBar.js';
+import MyLayOut from './components/Layout.js';
 
 const rootElement = document.getElementById('root');
 const appRoot = ReactDOM.createRoot(rootElement);
 appRoot.render(
   <React.StrictMode>
     <div>
+      <MyLayOut />
+      {/* <MenuBar /> */}
+      <br/>
     {/* <App /> */}
     <br/>
-    <ObjectApiData /> <br/>
+    {/* <ObjectApiData /> <br/> */}
      {/* <ApiData />    <br/> */}
     {/* <FetchingSingle />    <br/> */}
     {/* <DataFetching /> */}

@@ -18,6 +18,7 @@ function FetchingSingle() {
 
     return(
         <div>
+            <p>Search The PostById</p>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
             <div>{post.title}</div>
         </div>

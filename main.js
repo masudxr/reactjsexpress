@@ -26,23 +26,23 @@ app.get('/api/courses',(req, res) => {
     res.send(courses)
 });
 
-app.get('/api/courses/:id',(req, res) => {
-    let course = courses.find(c => c.id === parseInt(req.params.id))
-    if(!course) res.status(404).send(`This ID ${req.params.id} is not found the courses`)
-    res.send(course)
-});
+// app.get('/api/courses/:id',(req, res) => {
+//     let course = courses.find(c => c.id === parseInt(req.params.id))
+//     if(!course) res.status(404).send(`This ID ${req.params.id} is not found the courses`)
+//     res.send(course)
+// });
 
-app.post('/api/courses',(req, res) => {
-    const course = {
-        id: courses.length +1,
-        name: req.body.name
-    };
-    courses.push(course);
-});
+// app.post('/api/courses',(req, res) => {
+//     const course = {
+//         id: courses.length +1,
+//         name: req.body.name
+//     };
+//     courses.push(course);
+// });
 
-app.get('/api/posts/:year/:month',(req, res) => {
-    res.send(req.params)
-});
+// app.get('/api/posts/:year/:month',(req, res) => {
+//     res.send(req.params)
+// });
 
 
 // listen Port

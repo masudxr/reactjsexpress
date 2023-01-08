@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7px 10px;
+  /* background: #feffff; */
+  box-shadow: 0 5px 15px rgba(136, 6, 6, 0.06);
+  border-radius: 5px;
+  height: 89px;
+  margin-left: 100px;
+
+}
+:where(.css-dev-only-do-not-override-k83k30).ant-layout .ant-layout-header {
+  height: 86px;
+  padding-inline: 50px;
+  color: rgba(63, 52, 94, 0.88);
+  line-height: 64px;
+  background: #37793c;
+}
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+}
+.Container li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(10, 10, 10);
+  transition: 0.3s ease;
+}
+.Container li a:hover,
+.Container li a.active {
+  color: #4776e6;
+}
+.Container li a:hover::after,
+.Container li a.active::after {
+  content: '';
+  background-color: #4776e6;
+  width: 30%;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* child Class */
+.childrenclass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 75px;
+}
+.childrenclass li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+}
