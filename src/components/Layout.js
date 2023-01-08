@@ -3,6 +3,7 @@ import React from 'react';
 // import ApiData from './ApiData.js';
 import MenuBar from './MenuBar.js';
 import FetchData from './GetData.js';
+import FetchMenuData from './menu/FetchMenuData.js';
 // import DataFetching from './useEffect.js';
 // import FetchingSingle from './EffectGetSingle.js';
 // import ObjectApiData from './ObjectDataApi.js';
@@ -24,6 +25,8 @@ const MyLayOut = (React.FC = function () {
           <br/>
         <br/>
         <FetchData />
+        <br/>
+        <FetchMenuData />
         </Content>
         <Footer style={{ textAlign: 'center' }}>
           Furniture Shop ©2023 Created by MasudRana

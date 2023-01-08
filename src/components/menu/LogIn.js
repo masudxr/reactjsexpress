@@ -1,9 +1,14 @@
-import FetchData from "../GetData.js";
+import React, {useState, useEffect} from "react";
 
 
-function LogIN() {
+const LogIN = ({setData})=> {
+    const myData = "XYZ";
+
 return(
-    <button onClick={FetchData }>LogIn</button>
+    <div>
+    <button type="button" onClick={() => setData(myData)}>LogIn</button>
+    </div>
+    
 )
 }
 export default LogIN;
